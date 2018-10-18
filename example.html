@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head lang="en">
+  <style>
+    p {
+      color: blue;
+    }
+
+    .outer {
+      color: magenta;
+    }
+
+    .inner {
+      color: lawngreen;
+    }
+
+    #para-1 {
+      color: purple;
+    }
+
+    #para-2 {
+      color: deeppink;
+    }
+
+    #para-3 {
+      color: cyan;
+    }
+
+    * {
+      color: red;
+    }
+
+    #header-menu {
+      /*text-align:center; */
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: gray;
+    }
+
+    #header-menu li {
+      display: inline;
+      /* vs block */
+      width: 60px;
+      background-color: cyan;
+    }
+
+    #header-menu li a {
+      /* padding: 20px;
+      display: block;*/
+      color: white;
+      text-align: center;
+      /*padding: 14px 16px;*/
+      text-decoration: none;
+    }
+
+    /* Change the link color to (black) on hover */
+    #header-menu li a:hover {
+    background-color: black;
+}
+
+#header-menu li a:visited {
+background-color: lawngreen;
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <ul id="header-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <p>Note: Using href="#" for test links. In a real web site this would be URLs.</p>
+  </header>
+  <main>
+    <h1>The Top!</h1>
+    <p class="outer" id="para-1">hi!</p>
+    <p class="inner" id="para-2">Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt </p>
+    <p class="outer" id="para-3">bye</p>
+    <ul>
+      <li>item 1</item>
+      <li>item 2</item>
+    </ul>
+    <main>
+      <footer>
+        This is the footer.
+      </footer>
+</body>
+
+</html>

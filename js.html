@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head lang="en">
+  <script type="text/javascript">
+
+  </script>
+</head>
+<body>
+  <p id="first">first message</p>
+  <script>
+      document.write("<p>this is a paragraph</p>");
+    var node = document.getElementById("first");
+    var oldContent = node.innerHTML;
+    //node.innerHTML  = oldContent + "Foo <em>bar!</em>";
+    node.appendChild(document.createTextNode("this is my noew node"));
+
+</script>  <!--<h1>Hi!</h1><-->
+<p id="second">Message</p>
+<script>
+var node = document.getElementById("second");
+//node.innerHTML("Demo");
+node.removeChild(node.firstChild);
+</script>
+</body>
+</html>
