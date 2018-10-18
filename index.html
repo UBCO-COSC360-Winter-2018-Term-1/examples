@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+  <style>
+  #header-bar {
+      margin-left:auto;
+      margin-right:auto
+    }
+
+    ol {list-style-type:none;
+        text-align: center;
+      margin: 0;
+   padding: 0;
+  }
+  li {
+    background-color: cyan;
+    display: inline;
+}
+
+  #left{
+    float:left;
+    width:25%;
+  }
+  #middle{
+    float:left;
+    width:50%;
+  }
+  #right{
+    float:left;
+    width:25%;
+  }
+
+  #col-after{
+    clear:both;
+  }
+
+  .flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: DodgerBlue;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<ol>
+  <li><a href="#">item 1</a></li>
+  <li><a>item 2</a></li>
+  <li><a>item 3</a></li>
+</ol>
+  <table id="header-bar">
+    <tr><td>link 1</td><td>link 2</td></tr>
+  </table>
+
+  <center>
+  <table>
+    <tr><td>link 1</td><td>link 2</td></tr>
+  </table>
+  </center>
+
+  <div id="col">
+    <div id="left">
+      <p>left</p>
+    </div>
+
+    <div id="middle">
+      <p class="center-me">middle</p>
+      <div class="flex-container">
+
+      <img style="float:left;" src="images/dog.jpg" width="100px" >
+      <p  style="float:left;">  some text </p>
+    </div>
+    </div>
+
+    <div id="right">
+      <p>right</p>
+    </div>
+</div>
+<div id="col-after">
+<p><img  src="images/dog.jpg" width="100px" >
+  some text </p>
+
+  <table style="margin-left:auto;margin-right:auto;">
+    <tr>
+      <td>
+        <img  src="images/dog.jpg" width="100px">
+      </td>
+      <td>
+        This is not my dog!.
+      </td>
+    </tr>
+</div>
+</body>
+</html>
